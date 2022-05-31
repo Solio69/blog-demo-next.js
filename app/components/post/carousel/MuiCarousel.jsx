@@ -4,8 +4,8 @@ import Box from '@mui/material/Box';
 import MobileStepper from '@mui/material/MobileStepper';
 import Button from '@mui/material/Button';
 import SwipeableViews from 'react-swipeable-views';
-import ArrowLeftIcon from '@mui/icons-material/ArrowLeft';
-import ArrowRightIcon from '@mui/icons-material/ArrowRight';
+// import ArrowLeftIcon from '@mui/icons-material/ArrowLeft';
+// import ArrowRightIcon from '@mui/icons-material/ArrowRight';
 
 const images = [
     {
@@ -89,7 +89,7 @@ const MuiCarousel = () => {
                         disabled={activeStep === maxSteps - 1}
                     >
                         Next
-                        <ArrowRightIcon/>
+                        {/* <ArrowRightIcon/> */}
                     </Button>
                 }
                 backButton={
@@ -97,7 +97,7 @@ const MuiCarousel = () => {
                         size="small" 
                         onClick={handleBack} 
                         disabled={activeStep === 0}>
-                        <ArrowLeftIcon/>
+                        {/* <ArrowBackIosIcon/> */}
                         Back
                     </Button>
                 }
